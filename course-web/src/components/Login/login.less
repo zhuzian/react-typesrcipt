@@ -1,0 +1,139 @@
+.login-root {
+  height: 100%;
+  width: 100%;
+  background-color: #4b95da;
+  padding-top: 10%;
+}
+
+.login-form-card {
+  width: 424px;
+  height: 460px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  border-radius: 16px;
+
+  display: flexbox;
+  justify-content: center;
+  padding: 48px;
+}
+
+.login-form-card > div {
+  margin-bottom: 16px;
+}
+
+.login-form-title {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.login-form-type {
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 30px;
+}
+
+.login-form-type:hover {
+  color: @primary-color;
+}
+
+.login-form-type-active {
+  color: @primary-color;
+}
+
+.login-form-type-active::after {
+  content: '';
+  background-color: @primary-color;
+  display: block;
+  height: 2px;
+  width: 100% !important;
+  float: left;
+  margin-left: 0 !important;
+}
+
+.login-form-type-outer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 24px;
+  margin-bottom: 24px !important;
+}
+
+// .login-form-type:hover::after {
+//   content: '';
+//   background-color: #1890ff;
+//   display: block;
+//   height: 2px;
+//   width: 50%;
+//   margin-left: 25%;
+// }
+
+.footer-container {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.login-form-button {
+  width: 100%;
+}
+
+.login-captcha-button {
+  width: 96px;
+  font-size: small;
+  float: right;
+  height: 38px;
+}
+
+.login-input {
+  border-radius: 4px;
+  padding: 0;
+  height: 38px;
+  text-indent: 14px;
+  font-size: 14px;
+}
+
+.login-input > .ant-input-suffix {
+  text-align: center;
+  width: 38px;
+  margin-left: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 3px;
+  background-color: inherit;
+}
+
+#password {
+  text-indent: 14px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 0;
+  font-size: 14px;
+}
+
+#password:-webkit-autofill + .ant-input-suffix {
+  background-color: rgb(232, 240, 254);
+}
+
+.login-forget-password {
+  height: 20px;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 16px;
+}
+
+#captcha {
+  text-indent: 14px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 0;
+  font-size: 14px;
+}
+
+#captcha:-webkit-autofill + .ant-input-suffix {
+  background-color: rgb(232, 240, 254);
+}

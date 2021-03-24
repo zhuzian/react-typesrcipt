@@ -1,0 +1,85 @@
+.common-header {
+  background-color: #001529;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0 52px;
+  height: 64px;
+}
+
+.common-header > div {
+  margin-right: 16px;
+}
+.common-header-item {
+  width: 145px;
+  text-align: center;
+}
+
+.common-header-title {
+  cursor: pointer;
+  color: #fff;
+  min-width: 115px;
+}
+
+.common-header-item.ant-menu-item-selected {
+  background-color: @primary-color;
+  color: #e6f7ff;
+}
+
+.common-header-item.ant-menu-item-active {
+  color: #e6f7ff;
+  background-color: desaturate(lighten(#001529, 15%), 65%) !important;
+}
+.common-header-item.ant-menu-item-active.ant-menu-item-selected {
+  color: #e6f7ff;
+  background-color: #69c0ff !important;
+}
+
+.common-header-icon {
+  width: 36px;
+  height: 36px;
+}
+
+.common-header-user-group {
+  margin-left: auto;
+  margin-right: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  min-width: 145px;
+  height: 100%;
+}
+
+.common-header-menu {
+  min-width: 725px;
+}
+
+.common-header-user-avatar {
+  margin-right: 24px;
+}
+
+.common-header-user-popup {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+// .common-header-username {
+//   margin-right: 20px;
+// }
+
+.common-header-user-popup-items {
+  padding: 10px 0;
+}
+.common-header-user-popup-items > p {
+  width: 118px;
+  text-indent: 12px;
+  height: 32px;
+  line-height: 32px;
+  padding: 0;
+  cursor: pointer;
+}
+.common-header-user-popup-items > p:hover {
+  background-color: #f5f5f5;
+}
